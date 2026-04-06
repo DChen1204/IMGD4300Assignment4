@@ -96,7 +96,8 @@ const computePass = sg.compute({
     Db,
     sg.pingpong( statebuffer1, statebuffer2 )
   ],
-  dispatchCount:  [Math.ceil(width / 8), Math.ceil(height/8), 1]
+  dispatchCount:  [Math.ceil(width / 8), Math.ceil(height/8), 1],
+  times: 10
 })
 
 // Run the simulation
