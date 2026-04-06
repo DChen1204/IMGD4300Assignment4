@@ -1,0 +1,66 @@
+/* style.css */
+
+/* Ensure the canvas fills the entire page and has no scrollbars */
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+/* Style the canvas to take up the full viewport */
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* The control panel style */
+.controls {
+    
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    /* Position */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+
+    /* Appearance */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.controls.visible {
+    opacity: 1;
+}
+
+
+/* Slider styles */
+input[type=range] {
+    cursor: pointer;
+    width: 200px;
+}
+
+/* Color buttons */
+.color-button {
+    background: #333;
+    border: 1px solid #555;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.color-button:hover {
+    background: #555;
+}

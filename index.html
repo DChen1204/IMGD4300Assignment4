@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <script src='main.js' type='module'></script>
+    <link rel=stylesheet href=style.css>
+    <link rel='shortcut icon' href='data:image/x-icon;,' type='image/x-icon'> 
+  </head>
+  <body>
+    <canvas></canvas>
+
+    <!-- UI Control Panel -->
+     <div class="controls">
+      <h3 style="margin-top: 0;"> Reaction-Diffusion Simulation</h3>
+      
+      <!-- Feed Rate -->
+      <div class="control-group">
+        <label for="feedRate">Feed Rate:</label>
+        <input type="range" id="feedRateSlider" min="0.01" max="0.1" step="0.001" value="0.055">
+        <span id="feedRateValue">0.055</span>
+      </div>
+      <hr style="width: 100%; opacity: 0.3;">
+
+      <!-- Kill Rate -->
+      <div class="control-group">
+        <label for="killRate">Kill Rate:</label>
+        <input type="range" id="killRateSlider" min="0.03" max="0.07" step="0.001" value="0.062">
+        <span id="killRateValue">0.062</span>
+      </div>
+      <hr style="width: 100%; opacity: 0.3;">
+
+      <!-- Diffusion Rate of A -->
+      <div class="control-group">
+        <label for="diffusionRateA">A Diffusion:</label>
+        <input type="range" id="daSlider" min="0.1" max="1.0" step="0.01" value="1.0">
+        <span id="daValue">1.0</span>
+      </div>
+      <hr style="width: 100%; opacity: 0.3;">
+
+      <!-- Diffusion Rate of B -->
+      <div class="control-group">
+        <label for="diffusionRateB">B Diffusion:</label>
+        <input type="range" id="dbSlider" min="0.1" max="1.0" step="0.01" value="0.5">
+        <span id="dbValue">0.5</span>
+      </div>
+      <hr style="width: 100%; opacity: 0.3;">
+
+      <!-- Random Seed -->
+      <div class="control-group">
+        <button id="randomSeedButton" class="color-button">Random Seed</button>
+      </div>
+
+    </div>
+
+  </body>
+</html>
